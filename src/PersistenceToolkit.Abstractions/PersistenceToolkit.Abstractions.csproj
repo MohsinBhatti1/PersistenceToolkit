@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet package metadata -->
+    <PackageId>PersistenceToolkit.Abstractions</PackageId>
+    <Version>10.0.2</Version>
+    <Authors>MohsinBhatti</Authors>
+    <Company>MBDevForce</Company>
+    <Description>Abstractions and interfaces for PersistenceToolkit.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MohsinBhatti1/PersistenceToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MohsinBhatti1/PersistenceToolkit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright © MBDevForce 2025</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageTags>efcore;repository;genericrepository;specification;ddd;architecture;infrastructure</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="PersistenceToolkit.Persistence" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersistenceToolkit.Domain\PersistenceToolkit.Domain.csproj" />
+  </ItemGroup>
+</Project>
