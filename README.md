@@ -7,6 +7,7 @@
 **PersistenceToolkit** is your reusable, modular orchestration layer for **safe, consistent, Domain-Driven Design (DDD)-first persistence** with **EF Core**.
 
 It gives you:
+
 ✅ True aggregate root boundaries  
 ✅ Smart state management & tracking  
 ✅ Clean separation of read/write responsibilities  
